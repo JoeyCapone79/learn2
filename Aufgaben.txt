@@ -1,0 +1,54 @@
+Leicht (5)
+Mini-Taschenrechner
+Schreibe ein Programm, das zwei Zahlen und einen Operator (+ - * / // % **) einliest und das Ergebnis ausgibt.
+Beispiel: 3, 5, * → 15
+Hinweis: Achte bei / auf Division durch 0 (freundliche Fehlermeldung).
+
+Vokal-Zähler
+Zähle, wie viele Vokale (a, e, i, o, u, inkl. Großbuchstaben) in einem gegebenen String stehen.
+Beispiel: "Programmieren macht Spaß" → 7
+Hinweis: Nutze in und eine Menge/Set der Vokale.
+
+Liste filtern (gerade Zahlen)
+Gegeben eine Liste von Integers, gib nur die geraden zurück – gleiche Reihenfolge.
+Beispiel: [1,2,3,4,5,6] → [2,4,6]
+Hinweis: Listenkomprehension oder for + append.
+
+Einheitenumrechner (Celsius↔Fahrenheit)
+Frage nach Richtung (C2F oder F2C) und nach dem Wert, gib umgerechnet aus.
+Beispiel: C2F, 0 → 32.0
+Hinweis: Formeln: F= C*9/5+32, C=(F-32)*5/9.
+
+Häufigstes Wort (einfach)
+Lies eine Zeile Text, splitte auf Leerzeichen und gib das häufigste Wort aus (bei Gleichstand irgendeines der Top-Wörter).
+Beispiel: "hi hi hallo" → hi
+Hinweis: dict/collections.Counter nutzen; Interpunktion hier ignorieren.
+
+Mittel (4)
+Passwort-Checker
+Prüfe, ob ein Passwort „stark“ ist: Länge ≥ 8, enthält mindestens 1 Kleinbuchstabe, 1 Großbuchstabe, 1 Ziffer und 1 Sonderzeichen (!@#$%^&*?_-=+).
+Ausgabe: „stark“ oder konkrete Hinweise, was fehlt.
+Hinweis: Sets, any() und str.isdigit()/isupper()/islower() helfen.
+
+CSV-Summierer
+Lies aus einer Datei umsatz.csv Zeilen im Format datum;betrag (z. B. 2025-01-10;13.50) und gib die Summe aller Beträge mit 2 Nachkommastellen aus.
+Beispielausgabe: Gesamtsumme: 241.37 €
+Hinweis: with open(...), split(';'), float, auf leere Zeilen achten.
+
+Wort-Normalisierung
+Schreibe eine Funktion normalize(text), die
+
+alles kleinschreibt,
+
+deutsche Umlaute zu ae/oe/ue/ss ersetzt,
+
+mehrfach-Leerzeichen auf eins reduziert,
+
+vorne/hinten trimmt.
+Beispiel: " Grüße Übung " → "gruesse uebung"
+Hinweis: replace, split()/" ".join(...).
+
+Primfaktoren
+Gib die Primfaktoren einer positiven Zahl als Liste aus, aufsteigend.
+Beispiel: 84 → [2, 2, 3, 7]
+Hinweis: Teile iterativ durch den kleinsten möglichen Teiler; Stopp, wenn t*t > n.
